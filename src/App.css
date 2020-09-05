@@ -1,19 +1,67 @@
 
+body{
+  background-color: aliceblue;
+}
 
 .App {
   text-align: center;
   max-width: 960px;
   margin: 0 auto;
-
+  height: 100%;
 }
 
 .App h1{
-  color:red;
+  color:rgb(80, 80, 80);
 }
 
+.imageInput{
+  display: none;
+}
+
+.ajouterPhoto{
+  position: relative;
+  top: 100px;
+  cursor: pointer;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  color: deepskyblue;
+  border: 2px solid deepskyblue;
+}
+
+.ajouterPhoto:hover{
+  background-color: deepskyblue;
+  color: white;
+}
+
+.btnAjouter{
+  color : red;
+}
+
+.fileName {
+  margin-top: 16vh;
+  margin-bottom: 2vh;
+}
 .progress-bar{
   width: 100%;
-  background-color: red;
-  height: 1vh;
+  background-color: deepskyblue;
+  height: 0.7vh;
+  margin-top: 4vh;
 }
 
+
+.gridImage{
+  margin-top: 18vh;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.imageContainer{
+  width: 15rem;
+  height: 18rem;
+  margin: 50px 50px;
+}
+
+.image{
+  width: 15rem;
+  height: 18rem;
+}

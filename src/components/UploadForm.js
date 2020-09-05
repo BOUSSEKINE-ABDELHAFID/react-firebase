@@ -2,6 +2,8 @@ import React from 'react'
 import { useState } from 'react'
 import ProgressBar from './ProgressBar';
 
+
+
 const UploadForm = () => {
     const [file, setFile] = useState(null);
     const [erroe, setErroe] = useState(null)
@@ -20,7 +22,8 @@ const UploadForm = () => {
     }
     return (
         <form>
-          <input type="file" name="" id="" onChange = {handleChange}/>
+          <input type="file" name="" id="imageInput" onChange = {handleChange} className = "imageInput"/>
+          <label htmlFor="imageInput" className = "ajouterPhoto">ajouter une photo</label>
           <div>
               {
                   erroe && (
@@ -32,7 +35,7 @@ const UploadForm = () => {
               }
               {
                 file && (
-                      <div>
+                      <div className = "fileName">
                           {file.name}
                       </div>
                   )
